@@ -1,0 +1,10 @@
+# Windows-friendly requirements (use instead of requirements.txt)
+opencv-python==4.8.1.78
+numpy==1.24.0
+pytesseract==0.3.10
+easyocr==1.6.2
+flask==2.3.2
+spacy==3.6.0
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.6.0/en_core_web_sm-3.6.0-py3-none-any.whl
+pytest==7.4.0
+Pillow==10.0.0

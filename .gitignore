@@ -1,0 +1,35 @@
+@"
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.DS_Store
+
+# Virtualenv
+venv/
+
+# Logs
+*.log
+*.tmp
+
+# Output files
+*.out.json
+*.redacted.jpg
+*.proc.jpg
+
+# Temp gallery
+ocr_pii_debug_gallery/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Build
+dist/
+build/
+*.egg-info/
+"@ | Set-Content -Path .gitignore -Encoding UTF8
