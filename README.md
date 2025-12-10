@@ -1,20 +1,26 @@
-OCR + PII Extraction Pipeline
+# OCR + PII Extraction Pipeline for Handwritten Documents
 
-Lightweight, end-to-end pipeline to extract text from scanned or handwritten images, detect personally identifiable information (PII), and optionally redact detected PII in the image. Includes a visual debug web UI, CLI, and REST API.
+**Assignment Submission**: Complete OCR + PII extraction pipeline for handwritten documents in JPEG format.
 
-Features
+Lightweight, end-to-end pipeline to extract text from scanned or handwritten images, detect personally identifiable information (PII), and optionally redact detected PII in the image. Optimized for handwritten medical forms, clinical notes, and documents with various handwriting styles.
 
-Hybrid OCR engine — EasyOCR primary with Tesseract fallback
+## 🎯 Assignment Requirements Met
 
-PII detection — Regex patterns + spaCy NER (emails, phones, dates, SSN-like, PERSON/ORG/GPE)
+✅ **Input Format**: JPEG handwritten documents  
+✅ **End-to-End Pipeline**: Input → Preprocessing → OCR → Text Cleaning → PII Detection → Redaction  
+✅ **Handwriting Support**: Different styles and tilted images  
+✅ **Medical Documents**: Specialized for doctor/clinic notes and forms  
+✅ **Deliverables**: Python Notebook + Dependencies + Results Documentation
 
-Preprocessing — deskewing, denoising, adaptive thresholding, resizing profiles
+## 🚀 Features
 
-Redaction — draw solid boxes over PII regions on images
-
-Debug Web UI — upload, preview OCR boxes, compare preprocessing, view/save runs (gallery)
-
-CLI & REST API — programmatic usage for batch or service workflows
+- **Hybrid OCR Engine** — EasyOCR primary with Tesseract fallback for robust handwritten text recognition
+- **Advanced Preprocessing** — Automatic deskewing, denoising, adaptive thresholding for tilted/unclear images  
+- **Comprehensive PII Detection** — spaCy NER + regex patterns for names, phones, dates, SSNs, addresses
+- **Visual Redaction** — Automatic bounding box overlay to protect sensitive information
+- **Multiple Interfaces** — Jupyter notebook, CLI, REST API, and web UI for different use cases
+- **Batch Processing** — Handle multiple documents with consistent output format
+- **Performance Monitoring** — Built-in confidence scoring and processing metrics
 
 
 Quickstart (Windows / Linux / macOS)
